@@ -1,0 +1,159 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  display: inline-block;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatroom {
+  width: 360px;
+  height: 600px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.chatroom h3 {
+  background-color: dodgerblue;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatroom h3::before {
+  background-image: url('eraserhead.PNG');
+  background-size: 30px 30px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  content: '';
+  margin-right: 4px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.chatroom h3::after {
+  background-image: url('green.PNG');
+  background-size: 10px 10px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  content: '';
+  margin-right: 4px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.chatroom .chats {
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 10px 0 0;
+  height: 510px;
+  overflow-y: scroll;
+}
+
+.message {
+  float: right;
+  clear: both;
+  color: white;
+  background-color: dodgerblue;
+  position: relative;
+  padding: 5px 13px;
+  font-size: 14px;
+  border-radius: 10px;
+  list-style: none;
+  clear: both;
+  margin: 10px 0;
+  max-width: 200px;
+}
+
+.chatroom .input {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chatroom .input input[type='text'] {
+  outline: 0;
+  border: 2px solid;
+  border-width: thin;
+  border-color: lightgrey;
+  padding: 0 5px;
+  border-radius: 5px;
+  margin-left: 8px;
+  margin-right: 2px;
+  height: 30px;
+  width: 270px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.chatroom .input input[type='submit'] {
+  background-color: dodgerblue;
+  color: white;
+  font-weight: bold;
+  border: 1px solid;
+  border-color: dodgerblue;
+  height: 30px;
+  width: 70px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.chatroom .input input[type='submit']:hover {
+  background-color: #1873cc;
+}
